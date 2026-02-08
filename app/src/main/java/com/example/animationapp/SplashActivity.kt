@@ -25,7 +25,7 @@ class SplashActivity : AppCompatActivity() {
         appName.startAnimation(textAnim)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, SplashActivity::class.java))
+            startActivity(Intent(this, WelcomeActivity::class.java))
             finish()
         }, 2500)
     }

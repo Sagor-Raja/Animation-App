@@ -17,7 +17,7 @@
         android:id="@+id/appName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Animation App"
+        android:text="Sagor AI App"
         android:textColor="#FFFFFF"
         android:textSize="22sp"
         android:textStyle="bold"
