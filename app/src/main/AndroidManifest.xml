@@ -12,13 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AnimationApp">
         <activity
-            android:name=".WealcomeActivity"
+            android:name=".WelcomeActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".WelcomeActivity"
+            android:name=".WealcomeActivity"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
