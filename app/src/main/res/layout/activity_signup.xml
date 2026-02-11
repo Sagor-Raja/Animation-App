@@ -11,53 +11,62 @@
         android:layout_height="wrap_content"
         android:padding="24dp">
 
-        <!-- Lottie Animation instead of simple text -->
         <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/loginLottie"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:id="@+id/signupLottie"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="40dp"
-            app:lottie_url="https://assets9.lottiefiles.com/packages/lf20_mjlh3hcy.json"
+            android:layout_marginTop="20dp"
+            app:lottie_url="https://assets9.lottiefiles.com/packages/lf20_6wutsrox.json"
             app:lottie_autoPlay="true"
             app:lottie_loop="true" />
 
         <TextView
-            android:id="@+id/welcomeTitle"
+            android:id="@+id/signupTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/loginLottie"
+            android:layout_below="@id/signupLottie"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
-            android:text="Welcome Back!"
+            android:layout_marginTop="10dp"
+            android:text="Create Account"
             android:textColor="#FFFFFF"
             android:textSize="28sp"
             android:textStyle="bold" />
 
-        <!-- Login Card with Glassmorphism effect -->
         <LinearLayout
-            android:id="@+id/loginCard"
+            android:id="@+id/signupCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/welcomeTitle"
-            android:layout_marginTop="32dp"
+            android:layout_below="@id/signupTitle"
+            android:layout_marginTop="24dp"
             android:background="@drawable/login_button_bg"
             android:elevation="8dp"
             android:orientation="vertical"
             android:padding="24dp">
 
             <EditText
-                android:id="@+id/emailInput"
+                android:id="@+id/nameInput"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:background="@drawable/fb_input_bg"
-                android:hint="Email or Phone"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="16dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/emailInputSignup"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/fb_input_bg"
+                android:hint="Email"
                 android:inputType="textEmailAddress"
                 android:paddingHorizontal="16dp"
                 android:textColor="#000000" />
 
             <EditText
-                android:id="@+id/passwordInput"
+                android:id="@+id/passwordInputSignup"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginTop="16dp"
@@ -67,37 +76,39 @@
                 android:paddingHorizontal="16dp"
                 android:textColor="#000000" />
 
+            <!-- Confirm Password Field Added -->
+            <EditText
+                android:id="@+id/confirmPasswordInput"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/fb_input_bg"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:paddingHorizontal="16dp"
+                android:textColor="#000000" />
+
             <Button
-                android:id="@+id/loginButton"
+                android:id="@+id/signupButton"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginTop="24dp"
                 android:backgroundTint="#1877F2"
-                android:text="Login"
+                android:text="Sign Up"
                 android:textAllCaps="false"
                 android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/forgotPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="16dp"
-                android:text="Forgot Password?"
-                android:textColor="#1877F2"
                 android:textStyle="bold" />
 
         </LinearLayout>
 
         <TextView
-            android:id="@+id/goSignup"
+            android:id="@+id/goLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_below="@id/signupCard"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="20dp"
-            android:text="Don't have an account? Sign Up"
+            android:layout_marginTop="20dp"
+            android:text="Already have an account? Login"
             android:textColor="#FFFFFF"
             android:textSize="16sp" />
 
