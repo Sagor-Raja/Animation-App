@@ -5,9 +5,9 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.animation.AnimationUtils
-import androidx.appcompat.app.AppCompatActivity
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
 class SplashActivity : AppCompatActivity() {
 
@@ -24,6 +24,7 @@ class SplashActivity : AppCompatActivity() {
         logo.startAnimation(logoAnim)
         appName.startAnimation(textAnim)
 
+        // Move to Welcome Screen after 2.5 seconds
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, WelcomeActivity::class.java))
             finish()
