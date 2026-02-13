@@ -42,6 +42,8 @@ class WelcomeActivity : AppCompatActivity() {
             }
         }, 500)
 
+//        coment
+
         // Button Fade In
         val fadeAnim = AnimationUtils.loadAnimation(this, R.anim.fade_in)
         startBtn.startAnimation(fadeAnim)
