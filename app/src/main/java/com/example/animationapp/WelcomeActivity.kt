@@ -42,10 +42,6 @@ class WelcomeActivity : AppCompatActivity() {
             }
         }, 500)
 
-//        coment
-//        2nd comite
-//        3rd comite
-
         // Button Fade In
         val fadeAnim = AnimationUtils.loadAnimation(this, R.anim.fade_in)
         startBtn.startAnimation(fadeAnim)
