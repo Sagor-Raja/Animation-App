@@ -21,7 +21,7 @@
             app:lottie_url="https://assets9.lottiefiles.com/packages/lf20_mjlh3hcy.json"
             app:lottie_autoPlay="true"
             app:lottie_loop="true" />
-
+<!--coment-->
         <TextView
             android:id="@+id/welcomeTitle"
             android:layout_width="wrap_content"
